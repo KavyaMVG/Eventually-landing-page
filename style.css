@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-size-adjust: auto;
+}
+
+body{
+        background-image:linear-gradient(to right, rgba(0,0,0, 1),
+                rgba(255,255,255, 0.09)),url('/assets/images/bg01.jpg') ; 
+        background-position: center;
+        height: 100vh;
+        font-family: Manrope;
+    }
+.footer-credits{
+    font-size: .7rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    margin: 20px;
+}
+.footer{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 20px;
+}
+.footer-icons{
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+.hidden{
+    display: none;
+}
+#msg{
+    color: #1cb495;
+    font-size: 1.1rem;
+    margin-top: .5rem ;
+}
+
+
+@media screen and (max-width:35em) {
+    .title{
+        display: none;
+    }
+    .paragraph{
+        display: none;
+    }
+    
+    .content{
+        padding: 19rem 0;
+    }
+    
+    .btn{
+        width: 100%;
+        padding: .5rem 1rem;
+        background: #1cb495;
+        border: 1px solid #1cb495;
+        border-radius: 5px;
+        font-weight: 700;
+        color: white;
+        font-size: 1.1rem;
+        outline: 0;
+    }
+    .email{
+        background: none;
+        border: 1px solid white;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    
+    
+}
+    
+
+    
+
+
+@media screen and (min-width:35em) {
+
+    .title{
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 800;
+    }
+    
+    .paragraph{
+        color: white;
+        opacity: .5;
+        margin: 1rem 0;
+    }
+    .email{
+        padding: .4rem 1rem;
+        background: none;
+        border: 1px solid white;
+        outline: 0;
+        margin-right: 1rem;
+        border-radius: 5px;
+    }
+    .signup-btn{
+        padding: .4rem 1rem;
+        background: #1cb495;
+        border: 1px solid #1cb495; 
+        border-radius: 5px;
+    }
+}

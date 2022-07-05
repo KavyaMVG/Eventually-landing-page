@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codedamn Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- start writing your code -->
+    <div class="main-section">
+      <div class="content">
+        <h1 class="title">Eventually</h1>
+        <p class="paragraph">
+          the simple template for telling the world when you'll launch your next
+          big thing. brought to you by html5 up.
+        </p>
+        <div class="email-input">
+          <input class="email btn" type="email" placeholder="Email Address" />
+          <a href="#"
+            ><button onclick="greeting()" class="signup-btn btn">
+              sign up
+            </button></a
+          >
+          <p id="msg" class="hidden">Thank you!</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-regular fa-envelope"></i>
+      </div>
+      <div class="footer-credit">
+        <p class="credit-text">© untitled | credits: unsplash + html5 up</p>
+      </div>
+    </div>
+    <script>
+      function greeting() {
+        document.getElementById("msg").classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
